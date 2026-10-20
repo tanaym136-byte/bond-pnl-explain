@@ -1,0 +1,10 @@
+date,event,trade_id,bond_id,notional,price,independent_mark,pnl_impact,flag,note
+2026-09-10,NEW,T1001,BBB_TEL_35,5000000.0,96.1,96.302,10100.0,False,Bought from client
+2026-09-16,NEW,T1002,A_UTIL_33,4000000.0,92.57,95.516,117840.0,True,price -2.95 pts from independent mark (tolerance 0.75)
+2026-09-17,AMEND,T1002,A_UTIL_33,4000000.0,95.57,,-120000.0,True,"Price corrected from 92.57 to 95.57: keying error, confirmed with trader"
+2026-09-23,NEW,T1003,AA_TECH_28,-3000000.0,98.98,98.897,2490.0,False,Sold to client
+2026-09-23,NEW,T1004,UST_31,-5000000.0,97.852,97.862,-500.0,False,Rates hedge
+2026-10-01,NEW,T1005,UST_36,-10000000.0,96.216,96.236,-2000.0,True,possible duplicate of T1006
+2026-10-01,NEW,T1006,UST_36,-10000000.0,96.216,96.236,-2000.0,True,possible duplicate of T1005
+2026-10-02,CANCEL,T1006,UST_36,-10000000.0,,,2000.0,True,Duplicate of T1005: trade message sent twice to the booking system
+2026-10-06,NEW,T1007,BB_RTL_31,2000000.0,96.82,97.221,8020.0,False,Bought from client
